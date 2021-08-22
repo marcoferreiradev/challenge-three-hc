@@ -78,7 +78,7 @@
   },
   "semanticColors": {
     "background": {
-      "base": "#ffffff",
+      "base": "#303030",
       "base--inverted": "#03044e",
       "action-primary": "#0F3E99",
       "action-secondary": "#eef3f7",
@@ -94,7 +94,8 @@
       "muted-2": "#979899",
       "muted-3": "#cacbcc",
       "muted-4": "#e3e4e6",
-      "muted-5": "#f2f4f5"
+      "muted-5": "#f2f4f5",
+      "upmedal": "#303030"
     },
     "hover-background": {
       "action-primary": "#072c75",

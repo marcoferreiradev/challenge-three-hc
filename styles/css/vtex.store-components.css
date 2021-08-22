@@ -1,0 +1,22 @@
+.searchBarContainer {
+  max-width: 548px;
+  width: 100%;
+}
+
+.autoCompleteOuterContainer {
+  width: 100%;
+}
+
+.searchBarContainer {
+  background: #212121;
+}
+.searchBarContainer :global(.vtex-input-prefix__group) {
+  border: none;
+  border-radius: none;
+  border-bottom: 1px solid #fff;
+}
+
+.searchBarContainer :global(.vtex-styleguide-9-x-input) {
+  background: transparent;
+  color: #fff;
+}
