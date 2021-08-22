@@ -1,15 +1,39 @@
 {
   "store.home": { 
     "blocks": [
-      "rich-text"
+      "list-context.image-list#banner-home"
     ]
   },
-  "rich-text": { 
-    "props": { 
-      "text": "VTEX Store Framework",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "t-heading-1"
+  // Lista de imagens do banner
+  "list-context.image-list#banner-home":{
+    "children": ["slider-layout#banner-images"],
+    "props": {
+      "height": 650,
+      "images": [
+        {
+          "image": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf?response-content-disposition=inline%3B%20filename%3D%22BANNER-WOOD.png%22%3B%20filename%2A%3DUTF-8%27%27BANNER-WOOD.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210822%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210822T210626Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=1aa2fa631f4adfd712fe4b603d86b918769a13b0dd4b52fdc7d9539191dab205",
+          "description": "Banner 1",
+          "blockClass": "slider-image"
+        },
+        {
+          "image": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/du3k6akoks0u3xe322aypnaaal8e?response-content-disposition=inline%3B%20filename%3D%22W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png%22%3B%20filename%2A%3DUTF-8%27%27W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210822%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210822T210710Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=f406e75b6905e501a2b247b4871784227aa63bea3e6fedd496303c79f12e5283",
+          "description": "Banner 2",
+          "blockClass": "slider-image"
+        }
+      ]
+    }
+  },
+  // Slider para o banner
+  "slider-layout#banner-images":{
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false
     }
   }
+
 }
