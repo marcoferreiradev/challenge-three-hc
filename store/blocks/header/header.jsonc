@@ -1,9 +1,15 @@
 {
   "header": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
   },
   "header.full": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
   },
   "header-layout.desktop": {
     "children": [
@@ -14,7 +20,9 @@
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#desktop"]
+    "children": [
+      "flex-layout.row#desktop"
+    ]
   },
   "flex-layout.row#desktop": {
     "props": {
@@ -42,13 +50,17 @@
     "props": {
       "verticalAlign": "middle"
     },
-    "children": ["logo"]
+    "children": [
+      "logo"
+    ]
   },
   "flex-layout.col#search": {
     "props": {
       "width": "grow"
     },
-    "children": ["search-bar"]
+    "children": [
+      "search-bar"
+    ]
   },
   "logo": {
     "props": {
@@ -58,11 +70,17 @@
       "width": "120"
     }
   },
+
+  // Header mobile
   "header-layout.mobile": {
-    "children": ["sticky-layout#mobile"]
+    "children": [
+      "sticky-layout#mobile"
+    ]
   },
   "sticky-layout#mobile": {
-    "children": ["flex-layout.row#mobile"]
+    "children": [
+      "flex-layout.row#mobile"
+    ]
   },
   "flex-layout.row#mobile": {
     "children": [

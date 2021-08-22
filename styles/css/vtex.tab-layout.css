@@ -1,0 +1,23 @@
+.listContainer {
+    background-color: #212121;
+    margin-bottom: 10px;
+}
+
+.listItem--header-category :global(.vtex-button) {
+    color: #fff;
+    background: none;
+    border: none;
+}
+
+.listItem--header-category:hover{
+    background: transparent;
+}
+
+.listItemActive--header-category {
+    background: transparent;
+    border-bottom: 1px solid #59ff00;
+}
+
+.listItemActive--header-category :global(.vtex-button) {
+    color: #59ff00;
+}
