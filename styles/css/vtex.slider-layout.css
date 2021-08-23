@@ -1,3 +1,4 @@
 .imageElement {
-    border-radius: 10px;
+    max-width: max-content;
+    border-radius: 15px;
 }
